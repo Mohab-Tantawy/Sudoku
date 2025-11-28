@@ -119,7 +119,7 @@ package com.company;
                 for(int row=brow;row<brow+3;row++){
                     for(int col=bcol;col<bcol+3;col++){
                     if(grid[row][col]==num){
-                        int i=(row-brow)*3 +(col-bcol);
+                        int i=(row-brow)*3 +(col-bcol) ;
                         if(!first)
                             System.out.print(",");
                         System.out.print(i+1);

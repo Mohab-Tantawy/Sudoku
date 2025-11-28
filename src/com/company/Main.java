@@ -129,7 +129,7 @@ public class Main {
                         System.out.println("Row " + i + ": Invalid");
                     }
                 }
-                System.out.println("Row Validation thread completed.");
+                System.out.println("Row Validation thread  completed.");
             }
         }
         static class ColumnValidator implements Runnable{
