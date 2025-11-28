@@ -58,15 +58,19 @@ public class Main {
             for (int i = 1; i <= TOTAL_CHECKS; i++) {
                 if (check.checkRow(i)) {
                     validRows++;
-                    System.out.println("Row " + i + ": Valid\n");
+                    System.out.println("Row " + i + ":  Valid\n");
                 } else {
-                    System.out.println("Row " + i + ": Invalid\n");
+                    //System.out.println("Row " + i + ": Invalid\n");
+                    check.printRepeatedinRow(i);
+                    System.out.println();
                 }
                 if (check.checkColumn(i)) {
                     validColumns++;
                     System.out.println("Column " + i + ": Valid\n");
                 } else {
-                    System.out.println("Column " + i + ": Invalid\n");
+                   // System.out.println("Column " + i + ": Invalid\n");
+                    check.printRepeatedinColumn(i);
+                    System.out.println();
                 }
                 if (check.checkBox(i)) {
                     validBoxes++;

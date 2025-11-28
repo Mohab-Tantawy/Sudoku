@@ -50,4 +50,55 @@ package com.company;
         return true;
     }
 
+    public void printRepeatedinRow(int row){
+        row--;
+        int[] rep = new int[10];
+        for(int c=0;c<9;c++){
+            rep[grid[row][c]]++;
+        }
+
+        for(int num=1;num<10;num++){
+            if(rep[num]>1){
+                System.out.print("ROW "+(row+1)+", #"+num+", [");
+                boolean first= true;
+                for(int col=0;col<9;col++){
+                    if(grid[row][col]==num){
+                        if(!first)
+                            System.out.print(",");
+                        System.out.print(col+1);
+                        first=false;
+                    }
+                }
+                System.out.println("]");
+            }
+
+        }
+
+    }
+
+    public void printRepeatedinColumn(int col){
+        col--;
+        int[] rep = new int[10];
+        for(int r=0;r<9;r++){
+            rep[grid[r][col]]++;
+        }
+
+        for(int num=1;num<10;num++){
+            if(rep[num]>1){
+                System.out.print("COL "+(col+1)+", #"+num+", [");
+                boolean first= true;
+                for(int row=0;row<9;row++){
+                    if(grid[row][col]==num){
+                        if(!first)
+                            System.out.print(",");
+                        System.out.print(row+1);
+                        first=false;
+                    }
+                }
+                System.out.println("]");
+            }
+
+        }
+    }
+
 }
