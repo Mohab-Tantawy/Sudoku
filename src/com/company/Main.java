@@ -9,19 +9,19 @@ public class Main {
         if(grid[0][0]!=0) {
             for (int i = 1; i < 10; i++) {
                 if (check.checkRow(i)) {
-                    System.out.println("Row:" + i + " Valid\n");
+                    System.out.println("Row " + i + ": Valid\n");
                 } else {
-                    System.out.println("Row:" + i + " Invalid\n");
+                    System.out.println("Row " + i + ": Invalid\n");
                 }
                 if (check.checkColumn(i)) {
-                    System.out.println("Column:" + i + " Valid\n");
+                    System.out.println("Column " + i + ": Valid\n");
                 } else {
-                    System.out.println("Column:" + i + " Invalid\n");
+                    System.out.println("Column " + i + ": Invalid\n");
                 }
                 if (check.checkRow(i)) {
-                    System.out.println("Box:" + i + " Valid\n");
+                    System.out.println("Box " + i + ": Valid\n");
                 } else {
-                    System.out.println("Box:" + i + " Invalid\n");
+                    System.out.println("Box " + i + ": Invalid\n");
                 }
                 System.out.println("_______________________");
             }
