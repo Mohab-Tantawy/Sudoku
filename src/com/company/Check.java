@@ -97,7 +97,38 @@ package com.company;
                 }
                 System.out.println("]");
             }
+        }
+    }
 
+    public void printRepeatedinBox(int box){
+        box--;
+        int brow= (box/3)*3;
+        int bcol= (box%3)*3;
+        int[] rep=new int[10];
+
+        for(int row=brow;row<brow+3;row++){
+            for(int col=bcol;col<bcol+3;col++){
+                rep[grid[row][col]]++;
+
+            }
+        }
+        for(int num=1;num<10;num++){
+            if(rep[num]>1){
+                System.out.print("BOX "+(box+1)+", #"+num+", [");
+                boolean first= true;
+                for(int row=brow;row<brow+3;row++){
+                    for(int col=bcol;col<bcol+3;col++){
+                    if(grid[row][col]==num){
+                        int i=(row-brow)*3 +(col-bcol);
+                        if(!first)
+                            System.out.print(",");
+                        System.out.print(i+1);
+                        first=false;
+                    }
+                }
+                }
+                System.out.println("]");
+            }
         }
     }
 

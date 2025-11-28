@@ -76,7 +76,9 @@ public class Main {
                     validBoxes++;
                     System.out.println("Box " + i + ": Valid\n");
                 } else {
-                    System.out.println("Box " + i + ": Invalid\n");
+                  // System.out.println("Box " + i + ": Invalid\n");
+                    check.printRepeatedinBox(i);
+                    System.out.println();
                 }
                 System.out.println("_______________________");
             }
