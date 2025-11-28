@@ -32,16 +32,28 @@ public class Main {
                 case 2:
                     runMultiThread(grid);
                     break;
-                /*case 3:
-                    //runUNKOWN(grid);
+                case 3:
+                    run27Thread(grid);
                     break;
-                 */
+
                 default:
                     System.out.println("Invalid mode! Using Multi-Threaded mode. ");
                     runMultiThread(grid);
             }
         } else {
             System.out.println("ERROR: Couldn't Load Sudoku Grid :O ");
+        }
+    }
+    private static void run27Thread(int[][] grid){
+        System.out.println("\n Mode 3: 27 THREAD VALIDATION");
+        System.out.println("=".repeat(50));
+
+        Check check = new Check(grid);
+        case27Threads runner= new case27Threads(check);
+        try{
+            runner.runAndPrint();
+        }catch(InterruptedException e){
+            System.out.println("Thread interrupted");
         }
     }
     private static void runSingleThread(int[][] grid){

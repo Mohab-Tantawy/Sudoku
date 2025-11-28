@@ -39,9 +39,105 @@ public class case27Threads {
         @Override
         public void run(){
             boolean valid;
+            if(type== 0){
+                valid= check.checkRow(index);
 
+            if(!valid){
+                String out= capturePrint(()-> check.printRepeatedinRow(index));
+                if(!out.isEmpty())
+                    captured.add(out);
+            }}
+            else if(type == 1){
+                valid= check.checkColumn(index);
+
+                if(!valid){
+                    String out= capturePrint(()-> check.printRepeatedinColumn(index));
+                    if(!out.isEmpty())
+                        captured.add(out);
+                }
+
+            }
+            else{
+                valid= check.checkBox(index);
+
+                if(!valid){
+                    String out= capturePrint(()-> check.printRepeatedinBox(index));
+                    if(!out.isEmpty())
+                        captured.add(out);
+                }
+            }
         }
 
+    }
+
+    public void runAndPrint() throws InterruptedException{
+        Thread[] threads= new Thread[27];
+        int t=0;
+        for(int i=1;i<10;i++){
+            threads[t++]=new Thread(new Worker(0,i));
+        }
+
+        for(int i=1;i<10;i++){
+            threads[t++]=new Thread(new Worker(1,i));
+        }
+
+        for(int i=1;i<10;i++){
+            threads[t++]=new Thread(new Worker(2,i));
+        }
+
+        for(int i=0;i<threads.length;i++){
+            threads[i].start();
+        }
+
+        for(int i=0;i<threads.length;i++){
+            threads[i].join();
+        }
+
+        List<String> lines= new ArrayList<>();
+        String line;
+        while((line= captured.poll())!=null){
+            if(line.trim().isEmpty())
+                continue;
+
+            String[] l= line.split("\r\n");
+            for(String ll: l){
+                String trim= ll.trim();
+                if(!trim.isEmpty()){
+                    lines.add(trim);
+                }
+            }
+        }
+        if(lines.isEmpty()){
+            System.out.println("Valid");
+            return;
+        }
+        System.out.println("Invalid");
+        System.out.println();
+        
+        for(int r=1;r<10;r++){
+            String pre="ROW "+r+",";
+            for(String line1: lines){
+                if(line1.startsWith(pre))
+                    System.out.println(line1);
+            }
+        }
+        System.out.println("-".repeat(50));
+        for(int c=1;c<10;c++){
+            String pre="COL "+c+",";
+            for(String line2: lines){
+                if(line2.startsWith(pre))
+                    System.out.println(line2);
+            }
+        }
+        System.out.println("-".repeat(50));
+        for(int b=1;b<10;b++){
+            String pre="BOX "+b+",";
+            for(String line3: lines){
+                if(line3.startsWith(pre))
+                    System.out.println(line3);
+            }
+        }
+        System.out.println("-".repeat(50));
     }
 
 }
