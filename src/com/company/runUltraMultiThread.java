@@ -3,14 +3,21 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
-public class case27Threads {
+public class runUltraMultiThread implements SudokuValidator {
     private final ConcurrentLinkedDeque<String> captured = new ConcurrentLinkedDeque<>();
     private static final Object PRINT_LOCK = new Object();
 
-    private final Check check;
+    @Override
+    public void validate(int[][] grid) {
+        System.out.println("\nMode 3: ULTRA MULTI-THREAD VALIDATION");
+        System.out.println("=".repeat(50));
 
-    public case27Threads(Check check){
-        this.check=check;
+        Check check = new Check(grid);
+        try{
+            runAndPrint(check);
+        }catch (InterruptedException e){
+            System.out.println("Thread Interrupted");
+        }
     }
 
     private static String capturePrint(Runnable task){
@@ -29,10 +36,12 @@ public class case27Threads {
         }
     }
     private class Worker implements Runnable{
+        private final Check check;
         private final int type;
         private final int index;
 
-        public Worker(int type, int index) {
+        public Worker(Check check, int type, int index) {
+            this.check = check;
             this.type = type;
             this.index = index;
         }
@@ -70,19 +79,19 @@ public class case27Threads {
 
     }
 
-    public void runAndPrint() throws InterruptedException{
+    public void runAndPrint(Check check) throws InterruptedException{
         Thread[] threads= new Thread[27];
         int t=0;
         for(int i=1;i<10;i++){
-            threads[t++]=new Thread(new Worker(0,i));
+            threads[t++]=new Thread(new Worker(check,0,i));
         }
 
         for(int i=1;i<10;i++){
-            threads[t++]=new Thread(new Worker(1,i));
+            threads[t++]=new Thread(new Worker(check,1,i));
         }
 
         for(int i=1;i<10;i++){
-            threads[t++]=new Thread(new Worker(2,i));
+            threads[t++]=new Thread(new Worker(check,2,i));
         }
 
         for(int i=0;i<threads.length;i++){

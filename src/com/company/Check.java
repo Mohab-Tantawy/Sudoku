@@ -13,11 +13,14 @@ package com.company;
     public boolean checkRow(int row){
         row--;
         boolean[] seen=new boolean[10];
-        for(int col=0;col<9;col++){
-            int num=grid[row][col];
-            if(seen[num]){
-                return false;}
-            seen[num]=true;
+        for(int col=0;col<9;col++) {
+            int num = grid[row][col];
+            if (num != 0) {
+                if (seen[num]) {
+                    return false;
+                }
+                seen[num] = true;
+            }
         }
         return true;
     }
@@ -25,11 +28,14 @@ package com.company;
     public boolean checkColumn(int col){
         col--;
         boolean[] seen=new boolean[10];
-        for(int row=0;row<9;row++){
-            int num=grid[row][col];
-            if(seen[num]){
-                return false;}
-            seen[num]=true;
+        for(int row=0;row<9;row++) {
+            int num = grid[row][col];
+            if (num != 0) {
+                if (seen[num]) {
+                    return false;
+                }
+                seen[num] = true;
+            }
         }
         return true;
     }
@@ -40,11 +46,14 @@ package com.company;
         int brow= (box/3)*3;
         int bcol= (box%3)*3;
         for(int row=brow;row<brow+3;row++){
-            for(int col=bcol;col<bcol+3;col++){
-                int num =grid[row][col];
-                if(seen[num]){
-                    return false;}
-                seen[num]=true;
+            for(int col=bcol;col<bcol+3;col++) {
+                int num = grid[row][col];
+                if (num != 0) {
+                    if (seen[num]) {
+                        return false;
+                    }
+                    seen[num] = true;
+                }
             }
         }
         return true;
@@ -54,7 +63,9 @@ package com.company;
         row--;
         int[] rep = new int[10];
         for(int c=0;c<9;c++){
-            rep[grid[row][c]]++;
+            if(grid[row][c]!=0) {
+                rep[grid[row][c]]++;
+            }
         }
 
         for(int num=1;num<10;num++){
@@ -79,8 +90,10 @@ package com.company;
     public void printRepeatedinColumn(int col){
         col--;
         int[] rep = new int[10];
-        for(int r=0;r<9;r++){
-            rep[grid[r][col]]++;
+        for(int r=0;r<9;r++) {
+            if (grid[r][col] != 0) {
+                rep[grid[r][col]]++;
+            }
         }
 
         for(int num=1;num<10;num++){
@@ -108,8 +121,9 @@ package com.company;
 
         for(int row=brow;row<brow+3;row++){
             for(int col=bcol;col<bcol+3;col++){
-                rep[grid[row][col]]++;
-
+                if(grid[row][col]!=0) {
+                    rep[grid[row][col]]++;
+                }
             }
         }
         for(int num=1;num<10;num++){
@@ -122,7 +136,8 @@ package com.company;
                         int i=(row-brow)*3 +(col-bcol) ;
                         if(!first)
                             System.out.print(",");
-                        System.out.print(i+1);
+                        int posInBox = (row - brow) * 3 + (col - bcol) + 1;
+                        System.out.print(posInBox);
                         first=false;
                     }
                 }
