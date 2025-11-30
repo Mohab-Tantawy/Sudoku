@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sudoku-validator" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a111f395-64d9-41f4-961d-ac4ab7f21d20" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/SudokuValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/runMultiThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/runSingleThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Check.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main$BoxValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main$ColumnValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main$RowValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/case27Threads$Worker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/case27Threads.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Check.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/case27Threads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/runUltraMultiThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -108,6 +106,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
