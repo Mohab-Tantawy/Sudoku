@@ -21,30 +21,35 @@ public class runSingleThread implements SudokuValidator {
         for (int i = 1; i <= TOTAL_CHECKS; i++) {
             if (check.checkRow(i)) {
                 validRows++;
-                System.out.println("Row " + i + ":  Valid\n");
+                //System.out.println("Row " + i + ":  Valid\n");
             } else {
                 //System.out.println("Row " + i + ": Invalid\n");
                 check.printRepeatedinRow(i);
                 System.out.println();
-            }
+            }}
+        System.out.println("-".repeat(50));
+        for (int i = 1; i <= TOTAL_CHECKS; i++) {
             if (check.checkColumn(i)) {
                 validColumns++;
-                System.out.println("Column " + i + ": Valid\n");
+              //  System.out.println("Column " + i + ": Valid\n");
             } else {
                 // System.out.println("Column " + i + ": Invalid\n");
                 check.printRepeatedinColumn(i);
                 System.out.println();
-            }
+            }}
+        System.out.println("-".repeat(50));
+        for (int i = 1; i <= TOTAL_CHECKS; i++) {
             if (check.checkBox(i)) {
                 validBoxes++;
-                System.out.println("Box " + i + ": Valid\n");
+              //  System.out.println("Box " + i + ": Valid\n");
             } else {
                 // System.out.println("Box " + i + ": Invalid\n");
                 check.printRepeatedinBox(i);
                 System.out.println();
             }
-            System.out.println("_______________________");
+
         }
+        System.out.println("-".repeat(50));
         displayFinalResults();
     }
     private void displayFinalResults(){
