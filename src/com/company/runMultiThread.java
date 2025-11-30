@@ -62,7 +62,7 @@ public class runMultiThread implements SudokuValidator{
         @Override
         public void run() {
             synchronized (outputLock) {
-                System.out.println("Row validation thread started...");
+                //System.out.println("Row validation thread started...");
             }
             for (int i = 1; i <= TOTAL_CHECKS; i++) {
                 if (check.checkRow(i)) {
@@ -70,7 +70,7 @@ public class runMultiThread implements SudokuValidator{
                         validRows++;
                     }
                     synchronized (outputLock) {
-                        System.out.println("Row " + i + ": Valid");
+                        // System.out.println("Row " + i + ": Valid");
                     }
                 } else {
                     synchronized (outputLock) {
@@ -79,7 +79,8 @@ public class runMultiThread implements SudokuValidator{
                 }
             }
             synchronized (outputLock) {
-                System.out.println("Row Validation thread  completed.");
+                //System.out.println("Row Validation thread  completed.");
+                System.out.println("-".repeat(50));
             }
         }
     }
@@ -93,7 +94,7 @@ public class runMultiThread implements SudokuValidator{
         @Override
         public void run(){
             synchronized (outputLock) {
-                System.out.println("Column validation thread started...");
+                // System.out.println("Column validation thread started...");
             }
             for (int i = 1; i <= TOTAL_CHECKS; i++) {
                 if (check.checkColumn(i)) {
@@ -101,7 +102,7 @@ public class runMultiThread implements SudokuValidator{
                         validColumns++;
                     }
                     synchronized (outputLock) {
-                        System.out.println("Column " + i + ": Valid");
+                        //  System.out.println("Column " + i + ": Valid");
                     }
                 } else {
                     synchronized (outputLock) {
@@ -110,11 +111,12 @@ public class runMultiThread implements SudokuValidator{
                 }
             }
             synchronized (outputLock) {
-                System.out.println("Column Validation thread  completed.");
+                //  System.out.println("Column Validation thread  completed.");
+                System.out.println("-".repeat(50));
             }
         }
     }
-     class BoxValidator implements Runnable{
+    class BoxValidator implements Runnable{
         private Check check;
 
         public BoxValidator(Check check){
@@ -124,7 +126,7 @@ public class runMultiThread implements SudokuValidator{
         @Override
         public void run(){
             synchronized (outputLock) {
-                System.out.println("Box validation thread started...");
+                // System.out.println("Box validation thread started...");
             }
             for (int i = 1; i <= TOTAL_CHECKS; i++) {
                 if (check.checkBox(i)) {
@@ -132,7 +134,7 @@ public class runMultiThread implements SudokuValidator{
                         validBoxes++;
                     }
                     synchronized (outputLock) {
-                        System.out.println("Box " + i + ": Valid");
+                        //   System.out.println("Box " + i + ": Valid");
                     }
                 } else {
                     synchronized (outputLock) {
@@ -141,7 +143,8 @@ public class runMultiThread implements SudokuValidator{
                 }
             }
             synchronized (outputLock) {
-                System.out.println("Box Validation thread  completed.");
+                // System.out.println("Box Validation thread  completed.");
+                System.out.println("-".repeat(50));
             }
         }
     }
