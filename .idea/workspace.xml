@@ -9,21 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a111f395-64d9-41f4-961d-ac4ab7f21d20" name="Changes" comment="fixed single thread output printing">
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled Diagram.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Check.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/SudokuValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/SudokuValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$BoxValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$BoxValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$ColumnValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$ColumnValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$RowValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$RowValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runSingleThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runSingleThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread$Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread$Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="a111f395-64d9-41f4-961d-ac4ab7f21d20" name="Changes" comment="Added the diagrams (sequence made by Youssef Elwishy) and merged manually with the bonus part" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,6 +134,14 @@
       <option name="presentableId" value="Default" />
       <updated>1764335656282</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added the diagrams (sequence made by Youssef Elwishy) and merged manually with the bonus part">
+      <created>1764550075619</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764550075619</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,5 +154,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added the diagrams (sequence made by Youssef Elwishy) and merged manually with the bonus part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the diagrams (sequence made by Youssef Elwishy) and merged manually with the bonus part" />
   </component>
 </project>
