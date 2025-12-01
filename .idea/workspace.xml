@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sudoku-validator.jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a111f395-64d9-41f4-961d-ac4ab7f21d20" name="Changes" comment="fixed single thread output printing">
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled Diagram.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Check.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/SudokuValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/SudokuValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$BoxValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$BoxValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$ColumnValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$ColumnValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$RowValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runMultiThread$RowValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/runMultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/runMultiThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runSingleThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runSingleThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread$Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread$Worker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/runUltraMultiThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +38,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "y-shawer"
-  }
-}]]></component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -41,18 +53,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mohab-Tantawy/Sudoku.git",
-    "accountId": "56e9217b-aa01-4a4f-aed2-9e7e86409a1f"
-  }
-}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
   <component name="ProjectId" id="366mzC3aBY5xLQ7TjAH6XTlZKV3" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -113,12 +116,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "git-widget-placeholder": "main"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sudoku(main)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
@@ -145,15 +148,6 @@
       <option name="presentableId" value="Default" />
       <updated>1764335656282</updated>
     </task>
-    <task id="LOCAL-00001" summary="fixed single thread output printing">
-      <option name="closed" value="true" />
-      <created>1764525741980</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1764525741980</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,9 +160,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed single thread output printing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed single thread output printing" />
   </component>
 </project>
